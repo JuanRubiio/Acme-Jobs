@@ -30,10 +30,19 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
+<<<<<<< HEAD
 master.menu.anonymous.favourite-link-3 = Enlace favorito Carlos
 master.menu.anonymous.favuorite-link-2 = Enlace favorito Juan
 master.menu.anonymous.bulletin.list = Lista de Boletines
 master.menu.anonymous.bulletin.create = Crear Boletines
+=======
+master.menu.anonymous.favourite-link-3 = Tercer enlace favorito
+master.menu.anonymous.list = Listar Shouts
+master.menu.anonymous.create = Crear Shout
+master.menu.anonymous.list2 = Listar Boletines
+master.menu.anonymous.create2 = Crear Boletin
+
+>>>>>>> task006
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
