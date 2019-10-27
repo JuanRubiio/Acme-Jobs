@@ -17,40 +17,15 @@
 
 	<import resource="conversion-service.xml" />
 
-<<<<<<< HEAD
-	<bean name="bulletin1" class="acme.entities.bulletin.Bulletin">
+	<bean name="bulletin1" class="acme.entities.bulletin.JimenezBulletin">
 		<property name="name" value="Juan" />
 		<property name="surname" value="Jimenez" />
 		<property name="type" value="MANAGER" />
 		<property name="nif" value="15456336Z" />
 		<property name="body" value="Este es el primer boletin de prueba" />
-		<property name="bulletinName" value="Jimenez Bulletin" />
+		<property name="bulletinName" value="Rivero Bulletin" />
 		
 	</bean>
 	
-=======
-<!-- Shouts -->
-
-	<bean id="shout01" class="acme.entities.shouts.Shout">
-		<property name="author" value="John Doe"/>
-		<property name="text" value="I'm happy"/>
-		<property name="moment" value="2019/09/09 10:00"/>
-	</bean>
-
-	<bean id="shout02" class="acme.entities.shouts.Shout">
-		<property name="author" value="Jane Doe"/>
-		<property name="text" value="I'm the master of my room!"/>
-		<property name="moment" value="2019/08/09 15:55"/>
-	</bean>
-	
-	<bean id="shout03" class="acme.entities.shouts.Shout">
-		<property name="author" value="Foo Bar"/>
-		<property name="text" value="Just turning 20!"/>
-		<property name="moment" value="2019/09/07 00:00"/>
-	</bean>
-
-
->>>>>>> task006
-
 
 </beans>
