@@ -17,15 +17,42 @@
 
 	<import resource="conversion-service.xml" />
 
-	<bean name="bulletin1" class="acme.entities.bulletin.JimenezBulletin">
-		<property name="name" value="Juan" />
-		<property name="surname" value="Jimenez" />
-		<property name="type" value="MANAGER" />
-		<property name="nif" value="15456336Z" />
-		<property name="body" value="Este es el primer boletin de prueba" />
-		<property name="bulletinName" value="Rivero Bulletin" />
-		
+	<!-- Announcements -->
+	
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 01"/>
+		<property name="moment" value="2019/06/25 10:20"/>
+		<property name="link" value="https://www.nba.com"/>
+		<property name="description" value="Esto es un anuncio sobre la NBA"/>
 	</bean>
 	
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 02"/>
+		<property name="moment" value="2019/10/02 16:10"/>
+		<property name="link" value="https://www.as.com"/>
+		<property name="description" value="Esto es un anuncio deportivo"/>
+	</bean>
+	
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 03"/>
+		<property name="moment" value="2019/09/29 11:00"/>
+		<property name="link"><null/></property>
+		<property name="description" value="Esto es un anuncio"/>
+	</bean>
+
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Reto 1"/>
+		<property name="deadline" value="2019/12/15 10:10"/>
+		<property name="description" value="Texto aqui"/>
+		<property name="reward" value="Silver"/>
+	</bean>
+	
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Reto 2"/>
+		<property name="deadline" value="2019/11/1 19:01"/>
+		<property name="description" value="Texto 2 aqui"/>
+		<property name="reward" value="Gold"/>
+	</bean>
+
 
 </beans>
