@@ -24,7 +24,7 @@ import acme.framework.repositories.AbstractRepository;
 public interface AnonymousAnnouncementRepository extends AbstractRepository {
 
 	/* La query muestra los anuncios que tengan una fecha anterior o igual a 30 días */
-	@Query("select a.moment from Announcement a where datediff(CURRENT_TIMESTAMP,a.moment) <=30")
+	@Query("select a from Announcement a where datediff(curdate(), a.moment) <=30")
 	Collection<Announcement> findAnnouncementThisMonth();
 
 	@Query("select a from Announcement a")
@@ -32,4 +32,7 @@ public interface AnonymousAnnouncementRepository extends AbstractRepository {
 
 	@Query("select a from Announcement a where a.id = ?1")
 	Announcement findOneById(int id);
+
+	@Query("select count(a) from Announcement a")
+	Integer numberAnnouncements();
 }
