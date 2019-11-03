@@ -44,7 +44,7 @@ public class AdministratorAnnouncementListService implements AbstractListService
 		assert request != null;
 
 		Collection<Announcement> result;
-		result = this.repository.findAnnouncementThisMonth();
+		result = this.repository.findAllAnnouncements();
 
 		return result;
 	}
