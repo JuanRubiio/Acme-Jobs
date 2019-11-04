@@ -4,13 +4,13 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form readonly="true">
-	<acme:form-textbox code="authentication.investorRecord.nameInvestor" path="nameInvestor"/>
-	<acme:form-moment code="authentication.investorRecord.sector" path="sector"/>
-	<acme:form-moment code="authentication.investorRecord.investingStatement" path="investingStatement"/>
-	<acme:form-money code="authentication.investorRecord.stars" path="stars"/>
+	<acme:form-textbox code="authenticated.investorRecord.nameInvestor" path="nameInvestor"/>
+	<acme:form-moment code="authenticated.investorRecord.sector" path="sector"/>
+	<acme:form-moment code="authenticated.investorRecord.investingStatement" path="investingStatement"/>
+	<acme:form-money code="authenticated.investorRecord.stars" path="stars"/>
 
-<%-- 	<acme:form-submit code="authentication.investorRecord.create" action="/authenticated/investorRecord/create"/>
+<%-- 	<acme:form-submit code="authenticated.investorRecord.create" action="/authenticated/investorRecord/create"/>
 		 --%>
-  	<acme:form-return code="authentication.investorRecord.return"/>
+  	<acme:form-return code="authenticated.investorRecord.return"/>
 </acme:form>
 

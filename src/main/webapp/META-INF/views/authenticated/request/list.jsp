@@ -18,10 +18,10 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authentication.request.title" path="title" width="20%"/>
-	<acme:list-column code="authentication.request.moment" path="moment" width="10%"/>	
-	<acme:list-column code="authentication.request.deadline" path="deadline" width="10%" />	
-	<acme:list-column code="authentication.request.reward" path="reward" width="10%"/>	
-	<acme:list-column code="authentication.request.text" path="text" width="50%"/>	
+	<acme:list-column code="authenticated.request.title" path="title" width="20%"/>
+	<acme:list-column code="authenticated.request.moment" path="moment" width="10%"/>	
+	<acme:list-column code="authenticated.request.deadline" path="deadline" width="10%" />	
+	<acme:list-column code="authenticated.request.reward" path="reward" width="10%"/>	
+	<acme:list-column code="authenticated.request.text" path="text" width="50%"/>	
 		
 </acme:list>
